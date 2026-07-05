@@ -3,9 +3,11 @@
    "how to change link color." */
 
 body {
-  background-color: rgb(0, 0, 32); 
+  background-image: url(images/background.png);
   color: white;
-  font-family: Verdana;
+  font-family: Verdana;  
+  background-attachment: fixed;
+  background-size: auto
 }
 
 p {

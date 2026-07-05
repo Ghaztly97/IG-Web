@@ -11,62 +11,52 @@
   </head>
 
   <style>
-    
-    .smallButton {
+    .simpleSegment {
+      background-color: rgb(0,0,0,0.75);
+      
+      border: 4px inset rgb(0,255,255,0.25);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .button {
       background-image: linear-gradient(to top, grey, white);
-      color: black;
+      width: 160px;
+      height: 25px;
       text-align: center;
-      padding: 5px;
-      height: 60;
+      margin: auto;
+      margin-bottom: -15px;
+      color: grey;
     }
-    .smallButton:hover {
-      border: 1px solid black;
-    }
-    .buttonCollumn {
-      height: 600; 
-      width: 19%;
-      background-color: rgb(0,0,0,0.5);
-      margin-left: 4.5%;
-      float: left;
-    }
-    #centerpiece {
-      background-color: rgba(0,0,0,0.75);
-      width: 50%;
-      height: 600px;
-      margin-left: auto; margin-right: auto;
-      border: 5px solid white;
-      border-radius: 15px;
-      padding: 5px;
-      min-width: 600px;
+    .button:hover {
+      width: 165px;
     }
   </style>
 
   <body>
-    <div style="float: left; background-image: url(images/cloud.png); width: 100px; height: 100px;">
-    </div>
     <br>
-    <div id = centerpiece style = "height: 75px; width: 90%;">
-      <hr style="border: none; width: 1px; height: 60px; background-color: grey;">
-    </div>
     <br>
-    <div id = simpleLinks class = buttonCollumn> 
-      <a href = https://knowyourmeme.com/memes/pootis> <div class = smallButton> Stories </div> </a>
-      <div class = smallButton> Games </div>
-      <div class = smallButton> Artwork </div>
-    </div> 
-
-    <div id = centerpiece>
-      <p> 
-        <a href = "Eevolution/Collection_1/ep1.html" style = "text-align: center;"> 
-          Episode 1 test
-        </a>
-        <br>
+    <div style = "width: 900px; height: 1000px; margin-left: auto; margin-right: auto; margin-top: 10px; border-radius: 15px; border: 5px dotted grey;">
+      <br>
+      <div class = simpleSegment style = "width: 880px; height: 100px; background-color: black; margin-left: 10px; margin-bottom: 10px; "> </div>
+      <div id = buttons class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 20px; float: left;"> 
+        <div class = button> <p> Stories </p> </div>
+        <div class = button> <p> Games </p> </div>
+        <div class = button> <p> Artwork </p> </div>
+        <div class = button> <p> Characters </p> </div>
+        <div class = button> <p> Newsletter </p> </div>
+      </div>
+      <div id = board class = 'simpleSegment' style = "width: 660px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right;"> 
+        <h1> LOREM IPSUM </h1>
         <hr>
-        <br>
-        Welcome to my website!
-        The main home page is intended to be viewed on PC, but the reading pages work fine on mobile.
-      </p>
-    </div>  
-    
+        <p> This is a test paragraph. </p>
+        <a href = "Eevolution/Collection_1/ep1.html"> Eevolution Episode 1 </a>
+      </div>
+      <div id = badges class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 0px; float: left;"> 
+        <a href="https://hillhouse.neocities.org/journal/notes/palestine"> <img src="https://hillhouse.neocities.org/_images/toybox/_buttons/standwith.png"> </a>
+        <a href="https://hoiidaygirl1225.neocities.org/home"> <img src="images/holidaygirl1225.gif"> </a>
+      </div>
+      <div class = simpleSegment style = "width: 880px; height: 75px; margin-left: 10px; margin-bottom: 10px; float: left;">
+      </div>
+    </div>
   </body>
 </html>
