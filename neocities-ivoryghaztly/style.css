@@ -5,9 +5,7 @@
 body {
   background-image: url(images/background.png);
   color: white;
-  font-family: Verdana;  
-  background-attachment: fixed;
-  background-size: auto
+  font-family: Verdana;
 }
 
 p {

@@ -30,33 +30,85 @@
     .button:hover {
       width: 165px;
     }
+    .clickableimage:hover {
+      width: 110px;
+      height: 110px;
+      margin-bottom: -5px;
+      margin-top: -5px;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
   </style>
 
   <body>
     <br>
     <br>
-    <div style = "width: 900px; height: 1000px; margin-left: auto; margin-right: auto; margin-top: 10px; border-radius: 15px; border: 5px dotted grey;">
+    <div style = "width: 900px; height: 950px; margin-left: auto; margin-right: auto; margin-top: 10px; border-radius: 15px; border: 5px dotted grey; background-color: rgb(255,255,255,0.1);">
       <br>
       <div class = simpleSegment style = "width: 880px; height: 100px; background-color: black; margin-left: 10px; margin-bottom: 10px; "> </div>
       <div id = buttons class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 20px; float: left;"> 
         <div class = button> <p> Stories </p> </div>
         <div class = button> <p> Games </p> </div>
+        <!--
         <div class = button> <p> Artwork </p> </div>
         <div class = button> <p> Characters </p> </div>
         <div class = button> <p> Newsletter </p> </div>
+        -->
       </div>
-      <div id = board class = 'simpleSegment' style = "width: 660px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right;"> 
-        <h1> LOREM IPSUM </h1>
+      <div id = board class = 'simpleSegment' style = "width: 660px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right; overflow: auto;"> 
+        <p> Welcome to my website! </p>
+        <p> This is where I plan to show off some of my creations. </p>
         <hr>
-        <p> This is a test paragraph. </p>
-        <a href = "Eevolution/Collection_1/ep1.html"> Eevolution Episode 1 </a>
+        <h2> ABOUT ME </h2>
+        <p> My name is Ghaztly. I'm a game dev, artist, and writer.</p>
+        <p> I've been making games for a long time now, and I figured that now i should finally start showing off my passions.</p>
+        <h2>  MY FAVS: </h2>
+        <h3> Music: </h3>
+        <div style="height: 150px; overflow: auto; padding: 10px; box-sizing: border-box;">
+          <a target="_blank" href="https://archive.org/details/flyleaf2022flyleafdeluxeedition/03+-+Perfect.mp3"><img class = clickableimage src="images/albumcovers/flyleaf.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/gs_system-of-a-down-toxicity/01+Prison+Song.flac"><img class = clickableimage src="images/albumcovers/soad_toxicity.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/hypnotize_202605/04.+Hypnotize.mp3"><img class = clickableimage src="images/albumcovers/soad_hypnotize.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/steal-this-album_202606/06.+A.D.D.+(American+Dream+Denial).mp3"><img class = clickableimage src="images/albumcovers/soad_sta.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/1761510389_rammstein/Rammstein/01+Rammstein+-+Deutschland.flac"><img class = clickableimage src="images/albumcovers/rammstein.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/01-mein-herz-brennt"><img class = clickableimage src="images/albumcovers/rammstein_mutter.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/three-cheers-for-sweet-revenge-my-chemical-romance/01+Helena.mp3"><img class = clickableimage src="images/albumcovers/MCR_ThreeCheers.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://pinkshift.bandcamp.com/album/saccharine"><img class = clickableimage src="images/albumcovers/pinkshift_sac.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://pinkshift.bandcamp.com/album/love-me-forever"><img class = clickableimage src="images/albumcovers/pinkshift_lmf.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://pinkshift.bandcamp.com/album/suraksha"><img class = clickableimage src="images/albumcovers/pinkshift_sur.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://archive.org/details/JohnnyHoboAndTheFreightTrains-LoveSongsForTheApocalypse/01+-+New+Mexico+Song+-+Johnny+Hobo+And+The+Freight+Trains+-+Love+Songs+For+The+Apocalypse.mp3"><img class = clickableimage src="images/albumcovers/jhatft.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://codelle.bandcamp.com/album/bay-area-demon"><img class = clickableimage src="images/albumcovers/delle_bad.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://codelle.bandcamp.com/album/what-are-you-waiting-for"><img class = clickableimage src="images/albumcovers/delle_waywf.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=It791Lr0SXU&list=PL4lR1dEJkn9kcHv4ElkFgvaUsOSoOtWmJ"><img class = clickableimage src="images/albumcovers/adm_1.jpg" width = 100 height = 100></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=VFAK_wKi59g&list=OLAK5uy_lkA6CbcEV20mZcp66sV6W_rmH-1g_TYlU&index=8"><img class = clickableimage src="images/albumcovers/adm_2.jpg" width = 100 height = 100></a>
+        </div>
+        <h3> Games: </h3>
+        <div style="height: 200px; overflow: auto; padding: 10px; box-sizing: border-box;">
+          <a target="_blank" href="https://deltarune.com/"><img class = clickableimage src="images/dr_icon.png" width = 100 height = 100></a>
+          <a target="_blank" href="https://undertale.com/"><img class = clickableimage src="images/ut_icon.jpg" width = 100 height = 100></a>
+          <img class = clickableimage src="images/tlltd.png" width = 100 height = 100>
+          <img alt="Animal Crossing: New Leaf" class = clickableimage src="images/acnl.png" width = 100 height = 100>
+        </div>
       </div>
       <div id = badges class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 0px; float: left;"> 
         <a href="https://hillhouse.neocities.org/journal/notes/palestine"> <img src="https://hillhouse.neocities.org/_images/toybox/_buttons/standwith.png"> </a>
         <a href="https://hoiidaygirl1225.neocities.org/home"> <img src="images/holidaygirl1225.gif"> </a>
       </div>
-      <div class = simpleSegment style = "width: 880px; height: 75px; margin-left: 10px; margin-bottom: 10px; float: left;">
+      <div style = "width: 440px;">
+        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 10px; margin-bottom: 10px; float: left;">
+          <p style = "margin-top: -10px;"> My Tools </p>
+          <a target="_blank" href="https://www.sublimetext.com/"><img class = clickableimage src="images/sublimeTextLogo.png" width = 100 height = 100></a>
+          <a target="_blank" href="https://www.love2d.org/"><img class = clickableimage src="images/love2dlogo.png" width = 100 height = 100></a>
+          <a target="_blank" href="https://lovebrew.org/"><img class = clickableimage src="images/lovebrewLogo.png" width = 100 height = 100></a>
+        </div>
+        <br>
+        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 10px; margin-bottom: 10px; float: left;">
+          <p style = "margin-top: -10px;"> My Links </p>
+          <a target="_blank" href="https://github.com/Ghaztly97"><img class = clickableimage src="images/GitHub_Invertocat_White.png" width = 100 height = 100></a>
+          <a target="_blank" href="https://ghaztly97.itch.io/"><img class = clickableimage src="https://static.itch.io/images/app-icon.svg" width = 100 height = 100></a>
+          <a target="_blank" href="https://scratch.mit.edu/users/Ghaztly97/"><img class = clickableimage src="images/Scratch_logo.svg" width = 100 height = 100></a>
+        </div>
       </div>
+      <img src="https://media.tenor.com/PB_v8oFCde4AAAAi/eeveelution-eevee-evolution.gif" width=250 height = 250 style = "margin-left: 110px; margin-top: 50px;">
     </div>
   </body>
 </html>
