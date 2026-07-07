@@ -8,101 +8,125 @@
 </head>
 
 <style>
-    .simpleSegment {
-      background-color: rgb(0,0,0,0.75);
-      
-      border: 10px inset rgb(0,255,255,0.25);
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    .button {
-      background-image: linear-gradient(to top, grey, white);
-      width: 160px;
-      height: 25px;
-      text-align: center;
-      margin: auto;
-      margin-bottom: -15px;
-      color: grey;
-    }
-    .button:hover {
-      width: 165px;
-    }
-    .clickableimage:hover {
-      width: 110px;
-      height: 110px;
-      margin-bottom: -5px;
-      margin-top: -5px;
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-    .sideGradients {
-      width: 10%;
-      height: 100vh;
-      float: left;
-      position: fixed;
-      top: 0px;
-      z-index: -1;
-      background-image: linear-gradient(to right, rgb(8,8,32), rgb(0,0,0,0))
-    }
+  .simpleSegment {
+	background-color: rgb(0,0,0,0.75);
+	
+	border: 10px inset rgb(0,255,255,0.25);
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  .button {
+	background-image: linear-gradient(to top, grey, white);
+	width: 160px;
+	height: 25px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: -15px;
+	color: grey;
+  }
+  .button:hover {
+	width: 165px;
+  }
+  .clickableimage:hover {
+	width: 110px;
+	height: 110px;
+	margin-bottom: -5px;
+	margin-top: -5px;
+	margin-left: -5px;
+	margin-right: -5px;
+  }
+  .sideGradients {
+	width: 10%;
+	height: 100vh;
+	float: left;
+	position: fixed;
+	top: 0px;
+	z-index: -1;
+	background-image: linear-gradient(to right, rgb(8,8,32), rgb(0,0,0,0))
+  }
 
-    .panels {
-    	background-color: rgb(0,0,0,0.75);
-    	border: 5px double rgb(0,255,255,0.25); 
-    	box-sizing: border-box;
-    	border-radius: 25px;
-    }
+  .panels {
+  	background-color: rgb(0,0,0,0.75);
+  	border: 5px double rgb(0,255,255,0.25); 
+  	box-sizing: border-box;
+  	border-radius: 25px;
+  }
 
-    .gameDisplay {
-    	width: 120px;
-    	height: 90px;
-    	background-color: red;
-    	float: left;
-    	margin: 20px;
-    }
+  .gameDisplay {
+  	width: 180px;
+  	height: 190px;
+  	background-color: rgb(0, 0, 0, 0.5);
+  	border: 5px solid rgb(0,255,255,0.25);
+  	float: left;
+  	margin: 20px;
+  }
   </style>
 
 <body style = "padding: 0px; margin: 0px;">
 	<div class = sideGradients></div> 
-    <div class = sideGradients style="background-image: linear-gradient(to left, rgb(8,8,32), rgb(0,0,0,0)); float: right; margin-left: 90%;"></div>
-    <div id = banner style = "width: 1400px; height: 150px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border:4px inset rgb(0,255,255,0.25); background-color: rgb(0,0,0); border-radius: 15px 15px 0 0;">
-      <a href="/index.html"><img src="/images/banner.png" height = 165></a>
-    </div>
+  <div class = sideGradients style="background-image: linear-gradient(to left, rgb(8,8,32), rgb(0,0,0,0)); float: right; margin-left: 90%;"></div>
+  <div id = banner style = "width: 1400px; height: 150px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border:4px inset rgb(0,255,255,0.25); background-color: rgb(0,0,0); border-radius: 15px 15px 0 0;">
+	<a href="/index.html"><img src="/images/banner.png" height = 165></a>
+  </div>
 	<div style = "width: 1400px; height: 700px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px;">
-      <div id = left_panel class = panels style="width: 15%; height: 700px;  margin-right: 0px; float: left; padding: 20px;">
-      	<h2> Sort by: </h2>
-      	<input id="tag1" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="tag1"> Tag 1 </label><br>
-      	<input id="tag2" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="tag2"> Tag 2 </label><br>
-      	<input id="tag3" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="tag3"> Tag 3 </label><br>
-      	<input id="pootis" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="pootis"> pootis </label><br>
-      </div>
-      <div id = rightt_panel class = panels style="width: 85%; height: 700px; margin-left: 0px; float: right;">
-      	<a href="https://knowyourmeme.com/memes/pootis"><div id=game1 class=gameDisplay tags="tag1 pootis" style="background-color: red;"></div></a>
-      	<div id=game2 class=gameDisplay tags="tag1 tag2" style="background-color: blue;"></div>
-      	<div id=game3 class=gameDisplay tags="tag3" style="background-color: green;"></div>
-      </div>
-    </div>
+		<div id = left_panel class = panels style="width: 15%; height: 700px;  margin-right: 0px; float: left; padding: 20px;">
+			<h2> Sort by: </h2>
+			<input id="Treehouse-Zombie-Survivor" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="Treehouse-Zombie-Survivor"> Treehouse Zombie Survivor </label><br>
+			<!-- <input id="pootis" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="pootis"> pootis </label><br> -->
+		</div>
+		<div id = rightt_panel class = panels style="width: 85%; height: 700px; margin-left: 0px; float: right;">
+			<a href="TZS1.html">
+				<div class=gameDisplay tags="Treehouse-Zombie-Survivor pootis">
+					<div style="width: 180px; height: 135px;">
+						<img src="https://cdn2.scratch.mit.edu/get_image/project/701895155_144x108.png" width="180">
+					</div>
+					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor Classic</p>
+			  	</div>
+			</a>
+			<a href="TZS2.html">
+				<div class=gameDisplay tags="Treehouse-Zombie-Survivor pootis">
+					<div style="width: 180px; height: 135px;">
+						<img src="https://cdn2.scratch.mit.edu/get_image/project/716514520_144x108.png" width="180">
+					</div>
+					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 2</p>
+			  	</div>
+			</a>
+			<a href="TZS3.html">
+				<div class=gameDisplay tags="Treehouse-Zombie-Survivor pootis">
+					<div style="width: 180px; height: 135px;">
+						<img src="thumbnails/tzs3thumb.png" width="180" height="135">
+					</div>
+					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 3</p>
+			  	</div>
+			</a>
+			<a href="TZS4.html">
+				<div class=gameDisplay tags="Treehouse-Zombie-Survivor pootis">
+					<div style="width: 180px; height: 135px;">
+						<img src="https://img.itch.zone/aW1nLzE4NDYwNDQ0LnBuZw==/105x83%23/Kv3FpB.png" width="180" height="135">
+					</div>
+					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 4</p>
+			  	</div>
+			</a>
+		</div>
+  </div>
 
-    <script>
-    	// Sort the elements by tag
-    	// I hardly know javascript.
+  <script>
+  	// Sort the elements by tag
+  	// I hardly know javascript.
 
-    	let activeTags = []
-    	let gameDisplays = [
-    		document.getElementById("game1"),
-    		document.getElementById("game2"),
-    		document.getElementById("game3"),
-    	]
-    	console.log(gameDisplays[0])
-    	function elementVisibilityByTags(checkbox) {
-    		if (activeTags.includes(checkbox.id)) {
-    			console.log("Removed "+checkbox.id)
-    			let toRemove = checkbox.id
-    			activeTags.splice(activeTags.indexOf(checkbox.id), 1)
-    		} else {
-    			console.log("Added "+checkbox.id)
+  	let activeTags = []
+  	let gameDisplays = Array.from(document.getElementsByClassName("gameDisplay"))
+  	console.log(gameDisplays[0])
+  	function elementVisibilityByTags(checkbox) {
+  		if (activeTags.includes(checkbox.id)) {
+  			console.log("Removed "+checkbox.id)
+  			let toRemove = checkbox.id
+  			activeTags.splice(activeTags.indexOf(checkbox.id), 1)
+  		} else {
+  			console.log("Added "+checkbox.id)
 				activeTags.push(checkbox.id)
-    		}
-    		for (var i = 0; i < gameDisplays.length; i++) {
+  		}
+  		for (var i = 0; i < gameDisplays.length; i++) {
 				let element = gameDisplays[i]
 				let willShow = true
 				let tags = element.getAttribute("tags")
@@ -120,7 +144,7 @@
 					element.style.display = "block"
 				}
 			}
-    	}
-    </script>
+  	}
+  </script>
 </body>
 </html>
