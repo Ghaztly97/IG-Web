@@ -14,7 +14,7 @@
     .simpleSegment {
       background-color: rgb(0,0,0,0.75);
       
-      border: 4px inset rgb(0,255,255,0.25);
+      border: 10px inset rgb(0,255,255,0.25);
       padding: 10px;
       box-sizing: border-box;
     }
@@ -38,25 +38,36 @@
       margin-left: -5px;
       margin-right: -5px;
     }
+    .sideGradients {
+      width: 10%;
+      height: 100vh;
+      float: left;
+      position: fixed;
+      top: 0px;
+      z-index: -1;
+      background-image: linear-gradient(to right, rgb(8,8,32), rgb(0,0,0,0))
+    }
   </style>
 
-  <body>
-    <div style = "width: 900px; height: 200px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1);">
-     
+  <body style = "padding: 0px; margin: 0px;">
+    <div class = sideGradients></div> 
+    <div class = sideGradients style="background-image: linear-gradient(to left, rgb(8,8,32), rgb(0,0,0,0)); float: right; margin-left: 90%;"></div>
+
+    <div id = banner style = "width: 900px; height: 150px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(0,0,0); border-radius: 15px 15px 0 0;">
+      <a href="/index.html"><img src="/images/banner.png" height = 165></a>
     </div>
-    <div style = "width: 900px; height: 950px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1);">
+    <div style = "width: 900px; height: 1060px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px;">
       <br>
-      <div class = simpleSegment style = "width: 880px; height: 100px; background-color: black; margin-left: 10px; margin-bottom: 10px; "> </div>
-      <div id = buttons class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 20px; float: left;"> 
+      <div id = buttons class = 'simpleSegment' style = "width: 220px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 20px; float: left;"> 
         <div class = button> <p> Stories </p> </div>
-        <div class = button> <p> Games </p> </div>
+        <a href="games/library.html"><div class = button> <p> Games </p> </div></a>
         <!--
         <div class = button> <p> Artwork </p> </div>
         <div class = button> <p> Characters </p> </div>
         <div class = button> <p> Newsletter </p> </div>
         -->
       </div>
-      <div id = board class = 'simpleSegment' style = "width: 660px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right; overflow: auto;"> 
+      <div id = board class = 'simpleSegment' style = "width: 650px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right; overflow: auto;"> 
         <p> Welcome to my website! </p>
         <p> This is where I plan to show off some of my creations. </p>
         <hr>
@@ -90,26 +101,35 @@
           <img alt="Animal Crossing: New Leaf" class = clickableimage src="images/acnl.png" width = 100 height = 100>
         </div>
       </div>
-      <div id = badges class = 'simpleSegment' style = "width: 210px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 0px; float: left;"> 
+      <div id = badges class = 'simpleSegment' style = "width: 220px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 10px; float: left;"> 
         <a href="https://hillhouse.neocities.org/journal/notes/palestine"> <img src="https://hillhouse.neocities.org/_images/toybox/_buttons/standwith.png"> </a>
         <a href="https://hoiidaygirl1225.neocities.org/home"> <img src="images/holidaygirl1225.gif"> </a>
       </div>
-      <div style = "width: 440px;">
-        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 10px; margin-bottom: 10px; float: left;">
-          <p style = "margin-top: -10px;"> My Tools </p>
+      <div style = "width: 440px; margin-bottom: 10px;">
+        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 8px; margin-bottom: 10px; float: left;">
+          <p style = "margin-top: -10px; margin-bottom: 5px;"> My Tools </p>
           <a target="_blank" href="https://www.sublimetext.com/"><img class = clickableimage src="images/sublimeTextLogo.png" width = 100 height = 100></a>
           <a target="_blank" href="https://www.love2d.org/"><img class = clickableimage src="images/love2dlogo.png" width = 100 height = 100></a>
           <a target="_blank" href="https://lovebrew.org/"><img class = clickableimage src="images/lovebrewLogo.png" width = 100 height = 100></a>
         </div>
-        <br>
-        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 10px; margin-bottom: 10px; float: left;">
-          <p style = "margin-top: -10px;"> My Links </p>
+        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 8px; margin-bottom: 10px; float: left;">
+          <p style = "margin-top: -10px; margin-bottom: 5px;"> My Links </p>
           <a target="_blank" href="https://github.com/Ghaztly97"><img class = clickableimage src="images/GitHub_Invertocat_White.png" width = 100 height = 100></a>
           <a target="_blank" href="https://ghaztly97.itch.io/"><img class = clickableimage src="https://static.itch.io/images/app-icon.svg" width = 100 height = 100></a>
           <a target="_blank" href="https://scratch.mit.edu/users/Ghaztly97/"><img class = clickableimage src="images/Scratch_logo.svg" width = 100 height = 100></a>
         </div>
       </div>
-      <img src="https://media.tenor.com/PB_v8oFCde4AAAAi/eeveelution-eevee-evolution.gif" width=250 height = 250 style = "margin-left: 110px; margin-top: 50px;">
+      <img src="https://media.tenor.com/PB_v8oFCde4AAAAi/eeveelution-eevee-evolution.gif" width=250 height = 250 style = "margin-left: 110px; margin-top: 50px; margin-bottom: 20px;">
+      <hr>
+      <div class = simpleSegment style = "width: 880px; height: 200px; margin-left: 8px; margin-bottom: 10px; float: left;">
+        <h2 style="margin-top: -10px; margin-bottom: -10px;"> CHANGELOG </h2>
+        <div style="overflow: auto;">
+          <h3 style="margin-bottom: -10px;">7/7/2026</h3>
+          <ul>
+            <li>Games button links to game library page</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
