@@ -61,7 +61,6 @@
   	margin: 20px;
   }
   </style>
-
 <body style = "padding: 0px; margin: 0px;">
 	<div class = sideGradients></div> 
   <div class = sideGradients style="background-image: linear-gradient(to left, rgb(8,8,32), rgb(0,0,0,0)); float: right; margin-left: 90%;"></div>
@@ -71,53 +70,110 @@
 	<div style = "width: 1400px; height: 700px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px;">
 		<div id = left_panel class = panels style="width: 15%; height: 700px;  margin-right: 0px; float: left; padding: 20px;">
 			<h2> Sort by: </h2>
-			<input id="Treehouse-Zombie-Survivor" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="Treehouse-Zombie-Survivor"> Treehouse Zombie Survivor </label><br>
-			<input id="scratch" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="scratch"> Scratch </label><br>
-			<input id="love" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="love"> Love2D </label><br>
-			<input id="animation" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="animation"> Animation </label><br>
-			<!-- <input id="scratch" type="checkbox"  onclick="elementVisibilityByTags(this)"> <label for="scratch"> scratch </label><br> -->
+			<input id="Treehouse-Zombie-Survivor" type="checkbox"  autocomplete="off" onclick="elementVisibilityByTags(this)"> <label for="Treehouse-Zombie-Survivor"> Treehouse Zombie Survivor </label><br>
+			<input id="teacher-wonder" type="checkbox" autocomplete="off" onclick="elementVisibilityByTags(this)"> <label for="teacher-wonder"> Teacher Wonder </label><br>
+			<br>
+			<input id="scratch" type="checkbox" autocomplete="off" onclick="elementVisibilityByTags(this)"> <label for="scratch"> Scratch </label><br>
+			<input id="love" type="checkbox" autocomplete="off" onclick="elementVisibilityByTags(this)"> <label for="love"> Love2D </label><br>
+			<br>
+			<input id="animation" type="checkbox" autocomplete="off" onclick="elementVisibilityByTags(this)"> <label for="animation"> Animation </label><br>
 		</div>
-		<div id = rightt_panel class = panels style="width: 85%; height: 700px; margin-left: 0px; float: right;">
-			<a href="TZS1.html">
-				<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
-					<div style="width: 180px; height: 135px;">
-						<img src="https://cdn2.scratch.mit.edu/get_image/project/701895155_144x108.png" width="180">
-					</div>
-					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor Classic</p>
-			  	</div>
-			</a>
-			<a href="TZS2.html">
-				<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
-					<div style="width: 180px; height: 135px;">
-						<img src="https://cdn2.scratch.mit.edu/get_image/project/716514520_144x108.png" width="180">
-					</div>
-					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 2</p>
-			  	</div>
-			</a>
-			<a href="TZS3.html">
-				<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
-					<div style="width: 180px; height: 135px;">
-						<img src="thumbnails/tzs3thumb.png" width="180" height="135">
-					</div>
-					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 3</p>
-			  	</div>
-			</a>
-			<a href="TZS4.html">
-				<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
-					<div style="width: 180px; height: 135px;">
-						<img src="https://img.itch.zone/aW1nLzE4NDYwNDQ0LnBuZw==/105x83%23/Kv3FpB.png" width="180" height="135">
-					</div>
-					<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 4</p>
-			  	</div>
-			</a>
-			<a href="Escaped-Chasm-In-A-Nutshell.html">
-				<div class=gameDisplay tags="animation scratch">
-					<div style="width: 180px; height: 135px;">
-						<img src="https://cdn2.scratch.mit.edu/get_image/project/711192372_144x108.png" width="180" height="135">
-					</div>
-					<p style="text-align: center; margin-top: 8px;">Escaped Chasm in a Nutshell</p>
-			  	</div>
-			</a>
+		<div id = rightt_panel class = panels style="width: 85%; height: 700px; margin-left: 0px; float: right; overflow: auto;">
+			<div id = comingSoon style="height: 265px; width: 100%;">
+				<h1 style="margin-bottom: -15px; margin-left: 15px;">COMING SOON</h1>
+				<a href="BGB3.html">
+					<div class=gameDisplay tags="love fighting">
+						<div style="width: 180px; height: 135px;">
+							<img src="thumbnails/bgb3thumb.png" width="180">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">BluGlu Battlegrounds 3</p>
+				  	</div>
+				</a>
+				<br>
+			</div>
+			<div id = seperator style="height: 5px; width: 95%; background-color: rgb(0,255,255,0.25); margin-left: auto; margin-right: auto;"></div>
+			<div id = released>
+				<a href="TZS1.html">
+					<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/701895155_144x108.png" width="180">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor Classic</p>
+				  	</div>
+				</a>
+				<a href="TZS2.html">
+					<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/716514520_144x108.png" width="180">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 2</p>
+				  	</div>
+				</a>
+				<a href="TZS3.html">
+					<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="thumbnails/tzs3thumb.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 3</p>
+				  	</div>
+				</a>
+				<a href="TZS4.html">
+					<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://img.itch.zone/aW1nLzE4NDYwNDQ0LnBuZw==/105x83%23/Kv3FpB.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Treehouse Zombie Survivor 4</p>
+				  	</div>
+				</a>
+				<a href="TZS4.html">
+					<div class=gameDisplay tags="Treehouse-Zombie-Survivor scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/857740499_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">TZS Extras: Pvz Knockoff</p>
+				  	</div>
+				</a>
+				<a href="Escaped-Chasm-In-A-Nutshell.html">
+					<div class=gameDisplay tags="animation scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/711192372_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Escaped Chasm in a Nutshell</p>
+				  	</div>
+				</a>
+				<a href="Teacher-Wonder-7-5.html">
+					<div class=gameDisplay tags="teacher-wonder scratch animation">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/620795614_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Teacher Wonder 7.5</p>
+				  	</div>
+				</a>
+				<a href="Teacher-Wonder-7-6.html">
+					<div class=gameDisplay tags="teacher-wonder scratch animation">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/622709724_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Teacher Wonder 7.6</p>
+				  	</div>
+				</a>
+				<a href="Teacher-Wonder-Playable-Specil.html">
+					<div class=gameDisplay tags="teacher-wonder scratch">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/1042869449_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Teacher Wonder: Playable Specil</p>
+				  	</div>
+				</a>
+				<a href="Teacher-Wonder-7-7.html">
+					<div class=gameDisplay tags="teacher-wonder scratch animation">
+						<div style="width: 180px; height: 135px;">
+							<img src="https://cdn2.scratch.mit.edu/get_image/project/645738807_144x108.png" width="180" height="135">
+						</div>
+						<p style="text-align: center; margin-top: 8px;">Teacher Wonder 7.7</p>
+				  	</div>
+				</a>
+				</div>
 		</div>
   </div>
 
