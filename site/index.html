@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IvoryGhaztly - Home</title>
+    <title>IvoryGhaztly</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
@@ -17,6 +17,9 @@
       border: 10px inset rgb(0,255,255,0.25);
       padding: 10px;
       box-sizing: border-box;
+      border: 5px double rgb(0,255,255,0.25); 
+    box-sizing: border-box;
+    border-radius: 25px;
     }
     .button {
       background-image: linear-gradient(to top, grey, white);
@@ -47,6 +50,27 @@
       z-index: -1;
       background-image: linear-gradient(to right, rgb(8,8,32), rgb(0,0,0,0))
     }
+    .siteReference {
+      width: 360px;
+      height: 220px;
+      border: 4px inset rgb(0,255,255,0.25);
+      float: left;
+      margin: 20px;
+      margin-top: -10px;
+      background-color: rgb(0, 0, 0, 0.5);
+    }
+    .column {
+      float: left;
+      width: 25%;
+      padding: -5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
   </style>
 
   <body style = "padding: 0px; margin: 0px;">
@@ -56,9 +80,9 @@
     <div id = banner style = "width: 900px; height: 150px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(0,0,0); border-radius: 15px 15px 0 0;">
       <a href="/index.html"><img src="/images/banner.png" height = 165></a>
     </div>
-    <div style = "width: 900px; height: 1060px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px;">
+    <div style = "width: 900px; height: 1230px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px;">
       <br>
-      <div id = buttons class = 'simpleSegment' style = "width: 220px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 20px; float: left;"> 
+      <div id = buttons class = 'simpleSegment' style = "width: 220px; height: 275px; margin-left: 8px; margin-right: 3px; margin-bottom: 10px; float: left;"> 
         <div class = button> <p> Stories </p> </div>
         <a href="games/library.html"><div class = button> <p> Games </p> </div></a>
         <!--
@@ -67,7 +91,7 @@
         <div class = button> <p> Newsletter </p> </div>
         -->
       </div>
-      <div id = board class = 'simpleSegment' style = "width: 650px; height: 480px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right; overflow: auto;"> 
+      <div id = board class = 'simpleSegment' style = "width: 650px; height: 560px; margin-left: 0px; margin-right: 8px; margin-bottom: 10px; float: right; overflow: auto;"> 
         <p> Welcome to my website! </p>
         <p> This is where I plan to show off some of my creations. </p>
         <hr>
@@ -101,36 +125,60 @@
           <img alt="Animal Crossing: New Leaf" class = clickableimage src="images/acnl.png" width = 100 height = 100>
         </div>
       </div>
-      <div id = badges class = 'simpleSegment' style = "width: 220px; height: 230px; margin-left: 8px; margin-right: 3px; margin-bottom: 10px; float: left;"> 
-        <a href="https://hillhouse.neocities.org/journal/notes/palestine"> <img src="https://hillhouse.neocities.org/_images/toybox/_buttons/standwith.png"> </a>
-        <a href="https://hoiidaygirl1225.neocities.org/home"> <img src="images/holidaygirl1225.gif"> </a>
+      <div id = badges class = 'simpleSegment' style = "width: 220px; height: 275px; margin-left: 8px; margin-right: 3px; margin-bottom: 10px; float: left; padding: 5px; overflow: auto;">                 
+        <table style="margin-left: auto; margin-right: auto;">
+          <tr>
+            <th><a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"> <img src="https://hillhouse.neocities.org/_images/toybox/_buttons/standwith.png" width="90"> </a></th>
+            <th><a href="https://hoiidaygirl1225.neocities.org/home" target="_blank"> <img src="images/holidaygirl1225.gif" width="90"> </a></th>
+          </tr>
+        </table>
       </div>
-      <div style = "width: 440px; margin-bottom: 10px;">
-        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 8px; margin-bottom: 10px; float: left;">
+      <!--<div id = followMe class = 'simpleSegment' style = "width: 220px; height: 210px; margin-left: 8px; margin-right: 3px; margin-bottom: 10px; float: left; padding: 5px; overflow: auto;"> 
+        
+      </div>-->
+      <div style = "width: 880px; margin-bottom: 10px;">
+        <div id = checkThisBoard class = simpleSegment style = "width: 884px; height: 260px; margin-left: 8px; margin-bottom: 10px; float: left; overflow: auto;">
+          <h1 style="margin-bottom: -15px; margin-top: -10px;">Check this out!</h1>
+          <p>7/8/26</p>
+          <a href="games/library.html">
+            <div class = siteReference>
+              <img src="/pageScreenShots/Screenshot 2026-07-08 at 18-07-35 Games Library.png" width="360" height="180">
+              <h2 style="text-align: center; margin-top: 0px;">Games Page</h2>
+            </div>
+          </a>
+          <a href="https://bonemaster.neocities.org/" target="_blank">
+            <div class = siteReference>
+              <img src="/pageScreenShots/Screenshot 2026-07-08 at 18-24-03 HOME.png" width="360" height="180">
+              <h2 style="text-align: center; margin-top: 0px;">bonemaster.neocities.org</h2>
+            </div>
+          </a>
+        </div>
+        <div class = simpleSegment style = "width: 435px; height: 150px; margin-left: 8px; margin-bottom: 10px; float: left;">
           <p style = "margin-top: -10px; margin-bottom: 5px;"> My Tools </p>
           <a target="_blank" href="https://www.sublimetext.com/"><img class = clickableimage src="images/sublimeTextLogo.png" width = 100 height = 100></a>
           <a target="_blank" href="https://www.love2d.org/"><img class = clickableimage src="images/love2dlogo.png" width = 100 height = 100></a>
           <a target="_blank" href="https://lovebrew.org/"><img class = clickableimage src="images/lovebrewLogo.png" width = 100 height = 100></a>
         </div>
-        <div class = simpleSegment style = "width: 440px; height: 150px; margin-left: 8px; margin-bottom: 10px; float: left;">
+        
+        <div class = simpleSegment style = "width: 435px; height: 150px; margin-right: -12px; margin-bottom: 10px; float: right;">
           <p style = "margin-top: -10px; margin-bottom: 5px;"> My Links </p>
           <a target="_blank" href="https://github.com/Ghaztly97"><img class = clickableimage src="images/GitHub_Invertocat_White.png" width = 100 height = 100></a>
           <a target="_blank" href="https://ghaztly97.itch.io/"><img class = clickableimage src="https://static.itch.io/images/app-icon.svg" width = 100 height = 100></a>
           <a target="_blank" href="https://scratch.mit.edu/users/Ghaztly97/"><img class = clickableimage src="images/Scratch_logo.svg" width = 100 height = 100></a>
         </div>
       </div>
-      <img src="https://media.tenor.com/PB_v8oFCde4AAAAi/eeveelution-eevee-evolution.gif" width=250 height = 250 style = "margin-left: 110px; margin-top: 50px; margin-bottom: 20px;">
-      <hr>
-      <div class = simpleSegment style = "width: 880px; height: 200px; margin-left: 8px; margin-bottom: 10px; float: left;">
+      <hr style="float: left;">
+      <div class = simpleSegment style = "width: 884px; height: 200px; margin-left: 8px; margin-bottom: 10px; float: left; overflow: auto;">
         <h2 style="margin-top: -10px; margin-bottom: -10px;"> CHANGELOG </h2>
         <div style="overflow: auto;">
           <h3 style="margin-bottom: -10px;">7/8/2026</h3>
           <ul>
             <li>Added even more games to the game library page.</li>
+            <li>Added "Check This" section to the home page.</li>
           </ul>
           <h3 style="margin-bottom: -10px;">7/7/2026</h3>
           <ul>
-            <li>Games button links to game library page</li>
+            <li>Games button links to game library page.</li>
           </ul>
         </div>
       </div>
