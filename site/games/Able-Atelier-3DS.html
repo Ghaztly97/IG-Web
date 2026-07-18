@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Treehouse Zombie Survivor 3</title>
+<link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<style>
+  .simpleSegment {
+	background-color: rgb(0,0,0,0.75);
+	
+	border: 10px inset rgb(0,255,255,0.25);
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  .button {
+	background-image: linear-gradient(to top, grey, white);
+	width: 160px;
+	height: 25px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: -15px;
+	color: grey;
+  }
+  .button:hover {
+	width: 165px;
+  }
+  .clickableimage:hover {
+	width: 110px;
+	height: 110px;
+	margin-bottom: -5px;
+	margin-top: -5px;
+	margin-left: -5px;
+	margin-right: -5px;
+  }
+  .sideGradients {
+	width: 10%;
+	height: 100vh;
+	float: left;
+	position: fixed;
+	top: 0px;
+	z-index: -1;
+	background-image: linear-gradient(to right, rgb(8,8,32), rgb(0,0,0,0))
+  }
+
+  .panels {
+  	background-color: rgb(0,0,0,0.75);
+  	border: 5px double rgb(0,255,255,0.25); 
+  	box-sizing: border-box;
+  	border-radius: 25px;
+  }
+
+  .gameDisplay {
+  	width: 180px;
+  	height: 190px;
+  	background-color: rgb(0, 0, 0, 0.5);
+  	border: 5px solid rgb(0,255,255,0.25);
+  	float: left;
+  	margin: 20px;
+  }
+  </style>
+
+<body style = "padding: 0px; margin: 0px;">
+	<div class = sideGradients></div> 
+  <div class = sideGradients style="background-image: linear-gradient(to left, rgb(8,8,32), rgb(0,0,0,0)); float: right; margin-left: 90%;"></div>
+	<div id = banner style = "box-sizing: border-box; width: 800px; min-width: 350px; height: 158px; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: -10px; border:4px inset rgb(0,255,255,0.25); background-color: rgb(0,0,0); border-radius: 15px 15px 0 0;">
+      <a href="/index.html"><img class = banner src="/images/banner.png" height = 165></a>
+    </div>
+	<div style = "box-sizing: border-box; width: 800px; margin-left: auto; margin-right: auto; margin-top: 10px; border: 4px inset rgb(0,255,255,0.25); background-color: rgb(255,255,255,0.1); border-radius: 0 0 15px 15px; padding: 10px;">
+		<div style = "width: 500px; height: 250px; margin-left: auto; margin-right: auto;"><img src="https://github.com/Ghaztly97/Able-Atelier-3DS/raw/main/assets/images/AABanner.png" width=500></div>
+		<p>Able Atelier 3DS is my Homebrew tool I created for 3DS to edit Animal Crossing: New Leaf patterns easier and right on the console.</p>
+		<p>You can get Able Atelier for your console <a href="https://github.com/Ghaztly97/Able-Atelier-3DS">here</a>, or from <a href="https://db.universal-team.net/3ds/able-atelier-3ds">Universal DB</a></p>
+		<hr>
+		<h1>Welcome to: Able Atelier!  <img src="https://github.com/Ghaztly97/Able-Atelier-3DS/blob/main/assets/images/AAIcon.png?raw=true" alt="Game icon"></h1>
+		
+		Edit Patterns for Animal Crossing New Leaf: Welcome Amiibo directly on your 3DS!</p>
+		<h3>NOTE: Works <strong>ONLY</strong> for the Welcome Amiibo update, so update your copy of ACNL if you haven't!</h3>
+		<h3>SUPPORTS:</h3>
+		<ul>
+		<li>Freely Rotating, Scaling, and Panning the view of the pattern editor (Which ACNL doesn't have in it's editor)</li>
+		<li>Pallet swapping patterns</li>
+		<li>Working RIGHT ON YOUR 3DS without having to go to an external website to edit your patterns!</li>
+		</ul>
+		<h3>Credits</h3>
+		<ul>
+		<li>Made using LÖVE2D with <a href="https://github.com/lovebrew/lovepotion">LÖVE Potion</a></li>
+		<li>Uses the <a href="https://github.com/pennro-se/Hexatonic">Hexatonic</a>, <a href="https://github.com/vrld/hump">hump camera</a>, and <a href="https://github.com/vrld/HC">HC 2D Collision Detection</a> libraries.</li>
+		<li>Uses <a href="https://github.com/rxi/json.lua">rxi json.lua</a> for json parsing.</li>
+		</ul>
+		<img width="400" height="240" alt="2025-01-02_17-31-17 308_top" src="https://github.com/user-attachments/assets/06fac383-790e-4992-9657-2a0fc4e0f12e">
+		<img width="320" height="240" alt="2025-01-02_17-31-17 308_bot" src="https://github.com/user-attachments/assets/7adea13d-120c-4920-9939-1c4b5d497582">
+	</div>
+
+
+</html>
